@@ -1,1 +1,4 @@
-*.
+*.coffee text
+*.styl   text
+*.jade   text
+*.json   text
