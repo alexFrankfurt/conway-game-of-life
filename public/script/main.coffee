@@ -1,10 +1,9 @@
 
-startButton = document.querySelector("#run")
-
+startButton = document.querySelector(".control-panel>#run")
+runNButton  = document.querySelector(".control-panel>#run-n")
+stopButton  = document.querySelector(".control-panel>#stop")
 
 arr = genArr()
-
-
 
 canvas = document.querySelector("#canvas")
 canvasLeft = canvas.offsetLeft
@@ -26,7 +25,6 @@ arr[2][1] = 1
 arr[3][1] = 1
 
 drawGrid = (arr) ->
-  console.log arr
   width = CS * N
   height = CS * M
   ctx.fillStyle = BC
@@ -56,8 +54,9 @@ draw = (arr, num) ->
   else
     draw nextGen(arr), num -= 1
 
-
 drawGrid arr
 
 startButton.onclick = () ->
-  draw(arr, 10)
+  draw(arr, Infinity)
+
+runNButton.onclick = () -> draw(arr, 20)

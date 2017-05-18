@@ -1,9 +1,9 @@
 
 # Height
-M = 10
+M = 30
 
 # Width
-N = 10
+N = 30
 
 # Cell Size
 CS = 5

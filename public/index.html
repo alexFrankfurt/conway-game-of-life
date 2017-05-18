@@ -6,12 +6,17 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <h1>Game:  </h1>
+    <div class="game">
+      <h1>Game:  </h1>
+      <canvas id="canvas" width="300" height="300"></canvas>
+    </div>
 
+    <div class="control-panel">
+      <button id="run" name="run">Run</button>
+      <button id="run-n" name="run-n">Run 20 times</button>
+      <button id="stop" name="stop">Stop</button>
+    </div>
 
-
-    <canvas id="canvas" width="300" height="300"></canvas>
-    <button id="run" name="run">Run</button>
 
     <script src="scripts/game.js"></script>
     <script src="scripts/main.js"></script>
